@@ -140,6 +140,7 @@ DOMAIN-SUFFIX,iadsdk.apple.com
 DOMAIN-SUFFIX,ads.internal.unity3d.com
 DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com
 DOMAIN-SUFFIX,unityads.unity3d.com
+DOMAIN,ocsp.apple.com
 # > Alibaba
 DOMAIN,optimus-ads.amap.com
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com
@@ -159,6 +160,14 @@ DOMAIN,duclick.baidu.com
 DOMAIN,mobads.baidu.com
 DOMAIN,mobads-logs.baidu.com
 DOMAIN,nsclick.baidu.com
+
+# > Baidu Tieba
+AND,((IP-CIDR,0.0.0.0/0), (USER-AGENT,TBClient*))
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/(c\/(s\/splashSchedule|f\/forum\/getAdInfo)|w+\/\w+\/(sync|newRnSync|newlog|mlog))
+URL-REGEX,^http:\/\/[\s\S]*\.baidu\.com/.*ad[xs]\.php
+URL-REGEX,^https?://c.tieba.baidu.com/c/s/splashSchedule
+URL-REGEX,^https?://cover.baidu.com/cover/page/dspSwitchAds/
+
 # > ByteDance
 DOMAIN,ad.toutiao.com
 # > BitAuto
@@ -178,6 +187,12 @@ DOMAIN,ad.21cn.com
 DOMAIN,ad.k.21cn.com
 DOMAIN,admarket.21cn.com
 DOMAIN,adshows.21cn.com
+
+# > Didi
+URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/
+
+# > 饿了么
+DOMAIN,log.star.ele.me
 # > 车来了
 DOMAIN,atrace.chelaile.net.cn
 DOMAIN,logs.chelaile.net.cn
@@ -195,6 +210,10 @@ DOMAIN-SUFFIX,da.hunantv.com
 DOMAIN,adx.hupu.com
 DOMAIN,adx-api.hupu.com
 DOMAIN,goblin.hupu.com
+
+# > Huya live
+URL-REGEX,^https?:\/\/business\.msstatic\.com\/advertiser\/
+
 # (I)
 # > iQiyi
 DOMAIN,t7z.cupid.iqiyi.com
@@ -206,6 +225,11 @@ IP-CIDR,124.192.153.42/32,no-resolve
 DOMAIN-SUFFIX,deliver.ifeng.com
 DOMAIN,api.newad.ifeng.com
 DOMAIN,ifengad.3g.ifeng.com
+
+# (J)
+# > 京东
+URL-REGEX,^http:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$
+
 # (K)
 # > KuGou and Kuwo
 DOMAIN,adserviceretry.kugou.com
@@ -310,6 +334,10 @@ DOMAIN,splashqqlive.gtimg.com
 DOMAIN,wa.gtimg.com
 DOMAIN,wxsnsdy.wxs.qq.com
 DOMAIN,wxsnsdythumb.wxs.qq.com
+
+# > TikTok (include China / Internation Version)
+URL-REGEX,^https:\/\/[a-zA-Z]{2}\.snssdk\.com\/api\/ad\/
+
 # > The Paper
 DOMAIN,admonitor.thepaper.cn
 DOMAIN,adpai.thepaper.cn
@@ -353,3 +381,9 @@ DOMAIN,iyes.youku.com
 # > ZOL
 DOMAIN,apppv.zol.com.cn
 DOMAIN,pvnapp.zol.com.cn
+
+# > 知乎
+USER-AGENT,AVOS*
+URL-REGEX,https://www.zhihu.com/api/v4/mcn/
+URL-REGEX,https://api.zhihu.com/(ab|adx|xen|drama|fringe|zst|commercial|ad-style-service|market/popover|search/(top|tab|preset)|.*(guide|recommendations|extended|featured-comment-ad))
+AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
