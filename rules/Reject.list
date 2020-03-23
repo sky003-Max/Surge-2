@@ -493,6 +493,8 @@ URL-REGEX,^https?:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+\?maxbr=850
 URL-REGEX,^https?:\/\/asp\.cntv\.myalicdn\.com\/.+\?maxbr=850
 URL-REGEX,^https?:\/\/www\.cntv\.cn\/nettv\/adp\/
 URL-REGEX,^https?:\/\/v\.cctv\.com\/.+850
+# > CSDN
+URL-REGEX,^https:\/\/gw\.csdn\.net\/cms-app\/v2\/home_page\/open_advertisement
 # > 曹操出行
 URL-REGEX,^https?:\/\/cap\.caocaokeji\.cn\/advert-bss\/
 # > 财经
@@ -552,6 +554,8 @@ URL-REGEX,^https?:\/\/m\.ibuscloud.com\/v2\/app\/getStartPage
 URL-REGEX,^https?:\/\/smkmp\.96225.com\/smkcenter\/ad/
 # > 虎扑
 URL-REGEX,^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/(interfaceAdMonitor|interfaceAd)\/
+# > 华住会
+URL-REGEX,^https?:\/\/appapi\.huazhu\.com:\d{4}\/client\/app\/getAppStartPage\/
 # > 韩剧社
 URL-REGEX,^https?:\/\/47\.97\.20\.12\/ad\/
 # > 好好住
@@ -560,6 +564,7 @@ URL-REGEX,^https?:\/\/api\.haohaozhu\.cn\/index\.php\/home\/AppInit\/getStartPho
 URL-REGEX,^https?:\/\/cmsapi\.wifi8\.com\/v\d\/(emptyAd|adNew)\/
 # > Huya live
 URL-REGEX,^https?:\/\/business\.msstatic\.com\/advertiser\/
+URL-REGEX,^https?:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/resource
 
 # I
 # > iQiyi
@@ -591,6 +596,7 @@ URL-REGEX,^https?:\/\/\w+\.kingsoft-office-service\.com\/ad
 # K
 # > Keep
 URL-REGEX,^https?:\/\/api\.gotokeep\.com\/ads
+URL-REGEX,^https?:\/\/static1\.keepcdn\.com\/.+\d{3}x\d{4}
 # > 快看漫画
 URL-REGEX,^https?:\/\/api\.kkmh\.com\/.+(ad|advertisement)\/
 # > 酷我 (122.14.246.33)
@@ -632,6 +638,11 @@ URL-REGEX,^https?:\/\/b-api\.ins\.miaopai\.com\/\d\/ad/
 # > 马蜂窝
 URL-REGEX,^https?:\/\/mapi\.mafengwo\.cn\/ad\/
 URL-REGEX,^https?:\/\/mapi\.mafengwo\.cn\/travelguide\/ad\/
+# > 买单吧
+URL-REGEX,^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do$
+URL-REGEX,^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/getPopAds\.do$
+# > 美篇
+URL-REGEX,^https?:\/\/api\.meipian\.me.+advert
 
 # P
 # > 票根
@@ -640,6 +651,9 @@ URL-REGEX,^https?:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen/
 URL-REGEX,^https?:\/\/api\.yangkeduo\.com\/api\/cappuccino\/splash
 
 # Q
+# > Qdaily
+URL-REGEX,^https?:\/\/app\d\.qdaily\.com\/app\d\/boot_advertisements\.json
+URL-REGEX,^https?:\/\/notch\.qdaily\.com\/api\/v\d\/boot_ad
 # > 穷游
 URL-REGEX,^https?:\/\/open\.qyer\.com\/qyer\/startpage\/
 URL-REGEX,^https?:\/\/open\.qyer.com\/qyer\/config\/get
@@ -757,18 +771,21 @@ URL-REGEX,^https?:\/\/api\.feng\.com\/v\d\/advertisement\/.*Claunch
 # X
 # > 新浪
 URL-REGEX,^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv
-# > 迅游加速器
-URL-REGEX,^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/configs\/(splash_ad|ad_urls)
-URL-REGEX,^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/ads\/
 # > 下厨房
 URL-REGEX,^https?:\/\/api\.xiachufang\.com\/v2\/ad/
 # > 虾米
 URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/
+# > 雪球
+URL-REGEX,^https?:\/\/101\.201\.175\.228\/ads\/display
+URL-REGEX,^https?:\/\/(101\.201\.175\.228|182\.92\.251\.113)\/promotion\/(feed_)?display
 # > 小睡眠
 URL-REGEX,^https?:\/\/api\.psy-1\.com\/cosleep\/startup
 # > 喜马拉雅
 URL-REGEX,^https?:\/\/\w+\.ximalaya\.com\/api\/v\d\/adRealTime
 URL-REGEX,^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/ting\/preload\/
+# > 迅游加速器
+URL-REGEX,^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/configs\/(splash_ad|ad_urls)
+URL-REGEX,^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/ads\/
 # > 小站
 URL-REGEX,^https?:\/\/tiku\.zhan\.com\/Common\/newAd\/
 # > 讯飞
