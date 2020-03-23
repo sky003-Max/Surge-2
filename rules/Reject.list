@@ -450,11 +450,10 @@ URL-REGEX,^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.wireless\.hom
 URL-REGEX,^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/
 # > AcFun
 URL-REGEX,^https?:\/\/aes\.acfun\.cn\/s\?adzones
-# > 爱美剧 ads
-URL-REGEX,^https?://api.bjxkhc.com/index.php/app/ios/ads/index url
-URL-REGEX,^https?://api.bjxkhc.com/index.php/app/ios/ver/index_ios$ url
-URL-REGEX,^https?://api.bjxkhc.com/index.php/app/ios/pay/ok$ url
-
+# > aiMeiJu ads
+URL-REGEX,^https:\/\/api\.bjxkhc\.com\/index\.php\/app\/ios\/ads\/index$
+URL-REGEX,^https:\/\/api\.bjxkhc\.com\/index\.php\/app\/ios\/ver/index_ios$
+URL-REGEX,^https:\/\/api\.bjxkhc\.com\/index\.php\/app\/ios\/pay/ok$
 # B
 # > Baidu
 # >> Baidu Pan
