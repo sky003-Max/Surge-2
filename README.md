@@ -6,7 +6,7 @@ _________________
 > 不是所有广告都能简单的依靠规则阻止！
 
 # 简介
- 	本项目基于 [ConnersHua](https://github.com/ConnersHua) 修改而来。
+本项目基于 [ConnersHua](https://github.com/ConnersHua) 修改而来。
 
 # 规则集
 ## Reject.list
