@@ -463,6 +463,10 @@ URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/(c\/(s\/splashSchedule|f\/forum\/get
 URL-REGEX,^http:\/\/[\s\S]*\.baidu\.com/.*ad[xs]\.php
 URL-REGEX,^https?://c.tieba.baidu.com/c/s/splashSchedule
 URL-REGEX,^https?://cover.baidu.com/cover/page/dspSwitchAds/
+
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog)
 # >> Baidu Map
 # URL-REGEX,^https?:\/\/.+\/client\/phpui2\/
 URL-REGEX,^https?:\/\/ss0\.bdstatic\.com/.+_\d{3}_\d{4}\.jpg
