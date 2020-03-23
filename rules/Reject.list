@@ -564,7 +564,6 @@ URL-REGEX,^https?:\/\/api\.haohaozhu\.cn\/index\.php\/home\/AppInit\/getStartPho
 URL-REGEX,^https?:\/\/cmsapi\.wifi8\.com\/v\d\/(emptyAd|adNew)\/
 # > Huya live
 URL-REGEX,^https?:\/\/business\.msstatic\.com\/advertiser\/
-URL-REGEX,^https?:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/resource
 
 # I
 # > iQiyi
