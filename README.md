@@ -16,7 +16,7 @@ _________________
 ## GlobalMedia.list
    - 海外流媒体服务，如需细化海外流媒体（Youtube、Netflix、PronHub...）策略需排在此规则之前
 ## Special.list
-   - 后续规则修正
+   - 后续规则修正 - DIRECT
 ## Global.list
    - 海外加速 - Proxy
 ## China.list
