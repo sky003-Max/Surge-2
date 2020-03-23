@@ -132,7 +132,6 @@ DOMAIN,mobileads.msn.com
 DOMAIN,mopnativeadv.037201.com
 DOMAIN,nativeadv.dftoutiao.com
 
-# (0~9)
 # > 58.com
 DOMAIN-SUFFIX,58.xgo.com.cn
 DOMAIN-SUFFIX,brandshow.58.com
@@ -141,7 +140,7 @@ DOMAIN-SUFFIX,jing.58.com
 DOMAIN-SUFFIX,stat.xgo.com.cn
 DOMAIN-SUFFIX,track.58.com
 DOMAIN-SUFFIX,tracklog.58.com
-# (A)
+
 # > Apple
 DOMAIN-SUFFIX,iadsdk.apple.com
 DOMAIN-SUFFIX,ads.internal.unity3d.com
@@ -157,7 +156,7 @@ DOMAIN,adproxy.autohome.com.cn
 DOMAIN,rd.autohome.com.cn
 DOMAIN,al.autohome.com.cn
 DOMAIN,applogapi.autohome.com.cn
-# (B)
+
 # > Baidu
 DOMAIN-SUFFIX,cpro.baidu.com
 DOMAIN-SUFFIX,pos.baidu.com
@@ -183,7 +182,7 @@ DOMAIN,log.ycapp.yiche.com
 # > 百词斩
 DOMAIN,advertise.baicizhan.com
 DOMAIN,advertise.baicizhan.org
-# (C)
+
 # > CNTV
 DOMAIN,galaxy.bjcathay.com
 DOMAIN,mdrecv.app.cntvwb.cn
@@ -198,18 +197,18 @@ DOMAIN,adshows.21cn.com
 # > Didi
 URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/
 
-# > 饿了么
+# > ele
 DOMAIN,log.star.ele.me
 # > 车来了
 DOMAIN,atrace.chelaile.net.cn
 DOMAIN,logs.chelaile.net.cn
-# (G)
+
 # > Google
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,googleadsserving.cn
 DOMAIN-SUFFIX,googlesyndication.com
-# (H)
+
 # > HunanTV
 DOMAIN-SUFFIX,da.mgtv.com
 DOMAIN-SUFFIX,da.hunantv.com
@@ -221,7 +220,6 @@ DOMAIN,goblin.hupu.com
 # > Huya live
 URL-REGEX,^https?:\/\/business\.msstatic\.com\/advertiser\/
 
-# (I)
 # > iQiyi
 DOMAIN,t7z.cupid.iqiyi.com
 IP-CIDR,101.227.97.240/32,no-resolve
@@ -233,11 +231,9 @@ DOMAIN-SUFFIX,deliver.ifeng.com
 DOMAIN,api.newad.ifeng.com
 DOMAIN,ifengad.3g.ifeng.com
 
-# (J)
 # > 京东
 URL-REGEX,^http:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$
 
-# (K)
 # > KuGou and Kuwo
 DOMAIN,adserviceretry.kugou.com
 DOMAIN,ads.service.kugou.com
@@ -257,31 +253,26 @@ DOMAIN,minfo.wps.cn
 DOMAIN,mobad.ijinshan.com
 DOMAIN,ups.ksmobile.net
 DOMAIN,ws.ksmobile.net
-# (L)
+
 # > Le
 DOMAIN-SUFFIX,webp2p.letv.com
 DOMAIN,ark.letv.com
 DOMAIN,emma-414870e223.huodonghezi.com
 DOMAIN,g3.letv.com
 DOMAIN,n.mark.letv.com
-# > 乐播投屏
-DOMAIN,ad.hpplay.cn
-DOMAIN,adcdn.hpplay.cn
-DOMAIN,adeng.hpplay.cn
-DOMAIN,rp.hpplay.cn
-# (M)
+
 # > MI
 DOMAIN-SUFFIX,ad.intl.xiaomi.com
 DOMAIN-SUFFIX,ad.xiaomi.com
 DOMAIN-SUFFIX,admob.xiaomi.com
 DOMAIN,adv.sec.intl.miui.com
 DOMAIN,adv.sec.miui.com
-# > 墨迹天气
+# > Moji weather
 DOMAIN,ad.api.moji.com
 DOMAIN,adlaunch.moji.com
 DOMAIN,ads.mojicdn.com
 DOMAIN,v1.log.moji.com
-# (N)
+
 # > NetEase
 DOMAIN,ad.bn.netease.com
 DOMAIN,ad.yixin.im
@@ -298,7 +289,10 @@ DOMAIN,n.3g.163.com
 DOMAIN,nex.163.com
 DOMAIN,yt-adp.nosdn.127.net
 DOMAIN,yt-adp.ws.126.net
-# (P)
+
+URL-REGEX,^http:\/\/p\d\.music\.126\.net\/\w+==\/\d+\.jpg$
+URL-REGEX,^http:\/\/iad.*mat\.[a-z]*\.12[67]\.net/\w+\.(jpg|mp4)$
+
 # > PPTV
 DOMAIN,ads.aplus.pptv.com
 DOMAIN,ads.aplusapi.pptv.com
@@ -310,7 +304,7 @@ DOMAIN,cdn.adapi.fotoable.com
 # > PeanutWiFiMpass
 DOMAIN,adnew.wifi8.com
 DOMAIN,adfile.wifi8.com
-# (S)
+
 # > Sina
 DOMAIN-SUFFIX,beacon.sina.com.cn
 DOMAIN,adimg.vue.weibo.com
@@ -326,7 +320,7 @@ DOMAIN,imp.optaim.com
 DOMAIN,v2.reachmax.cn
 DOMAIN,track.sohu.com
 DOMAIN,hui.sohu.com
-# (T)
+
 # > Tencent
 DOMAIN-SUFFIX,e.qq.com
 DOMAIN-SUFFIX,gdt.qq.com
@@ -362,12 +356,21 @@ DOMAIN,iad0ssl.pconline.com.cn
 DOMAIN,imgad0.pcauto.com.cn
 DOMAIN,imgad0.pconline.com.cn
 DOMAIN,ivy.pchouse.com.cn
-# (W)
-# > WiFi 万能钥匙
+
+# > WiFi key
 DOMAIN,a.wkanx.com
 DOMAIN,cwx.lianwangtech.com
 DOMAIN,c1wx.lianwangtech.com
-# (X)
+# > Xuneli
+DOMAIN,adsp.xunlei.com
+DOMAIN,etl.xlmc.sandai.net
+# > Xiaomi
+DOMAIN-SUFFIX,ad.xiaomi.com
+DOMAIN-SUFFIX,ad.intl.xiaomi.com
+DOMAIN-SUFFIX,data.mistat.xiaomi.com
+DOMAIN-SUFFIX,tracking.miui.com
+DOMAIN,adv.sec.miui.com
+DOMAIN,o2o.api.xiaomi.com
 # > 喜马拉雅
 DOMAIN,ad.ximalaya.com
 DOMAIN,adbs.ximalaya.com
@@ -379,76 +382,12 @@ DOMAIN,adsebs.ximalaya.com
 DOMAIN,ads-img-qc.xhscdn.com
 DOMAIN,ads-video-qc.xhscdn.com
 DOMAIN,t-ads.xiaohongshu.com
-# (Y)
+
 # > Youku
 DOMAIN-SUFFIX,atm.youku.com
 DOMAIN,ad.mobile.youku.com
 DOMAIN,iyes.youku.com
-# Youku & Tudou
-DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com
-DOMAIN-SUFFIX,actives.youku.com
-DOMAIN-SUFFIX,ad.api.3g.tudou.com
-DOMAIN-SUFFIX,ad.api.3g.youku.com
-DOMAIN-SUFFIX,ad.api.mobile.youku.com
-DOMAIN-SUFFIX,ad.mobile.youku.com
-DOMAIN-SUFFIX,adcontrol.tudou.com
-DOMAIN-SUFFIX,adplay.tudou.com
-DOMAIN-SUFFIX,b.smartvideo.youku.com
-DOMAIN-SUFFIX,c.yes.youku.com
-DOMAIN-SUFFIX,dev-push.m.youku.com
-DOMAIN-SUFFIX,dl.g.youku.com
-DOMAIN-SUFFIX,dmapp.youku.com
-DOMAIN-SUFFIX,e.stat.ykimg.com
-DOMAIN-SUFFIX,gamex.mobile.youku.com
-DOMAIN-SUFFIX,goods.tudou.com
-DOMAIN-SUFFIX,hudong.pl.youku.com
-DOMAIN-SUFFIX,hz.youku.com
-DOMAIN-SUFFIX,iwstat.tudou.com
-DOMAIN-SUFFIX,iyes.youku.com
-DOMAIN-SUFFIX,l.ykimg.com
-DOMAIN-SUFFIX,l.youku.com
-DOMAIN-SUFFIX,lstat.youku.com
-DOMAIN-SUFFIX,lvip.youku.com
-DOMAIN-SUFFIX,mobilemsg.youku.com
-DOMAIN-SUFFIX,msg.youku.com
-DOMAIN-SUFFIX,myes.youku.com
-DOMAIN-SUFFIX,nstat.tudou.com
-DOMAIN-SUFFIX,p-log.ykimg.com
-DOMAIN-SUFFIX,p.l.ykimg.com
-DOMAIN-SUFFIX,p.l.youku.com
-DOMAIN-SUFFIX,passport-log.youku.com
-DOMAIN-SUFFIX,push.m.youku.com
-DOMAIN-SUFFIX,r.l.youku.com
-DOMAIN-SUFFIX,s.p.youku.com
-DOMAIN-SUFFIX,sdk.m.youku.com
-DOMAIN-SUFFIX,stat.tudou.com
-DOMAIN-SUFFIX,stat.youku.com
-DOMAIN-SUFFIX,stats.tudou.com
-DOMAIN-SUFFIX,store.tv.api.3g.youku.com
-DOMAIN-SUFFIX,store.xl.api.3g.youku.com
-DOMAIN-SUFFIX,tdrec.youku.com
-DOMAIN-SUFFIX,test.ott.youku.com
-DOMAIN-SUFFIX,v.l.youku.com
-DOMAIN-SUFFIX,val.api.youku.com
-DOMAIN-SUFFIX,wan.youku.com
-DOMAIN-SUFFIX,ykatr.youku.com
-DOMAIN-SUFFIX,ykrec.youku.com
-DOMAIN-SUFFIX,ykrectab.youku.com
-IP-CIDR,117.177.248.17/32,no-resolve
-IP-CIDR,117.177.248.41/32,no-resolve
-IP-CIDR,223.87.176.139/32,no-resolve
-IP-CIDR,223.87.176.176/32,no-resolve
-IP-CIDR,223.87.177.180/32,no-resolve
-IP-CIDR,223.87.177.182/32,no-resolve
-IP-CIDR,223.87.177.184/32,no-resolve
-IP-CIDR,223.87.177.43/32,no-resolve
-IP-CIDR,223.87.177.47/32,no-resolve
-IP-CIDR,223.87.177.80/32,no-resolve
-IP-CIDR,223.87.182.101/32,no-resolve
-IP-CIDR,223.87.182.102/32,no-resolve
-IP-CIDR,223.87.182.11/32,no-resolve
-IP-CIDR,223.87.182.52/32,no-resolve
-# (Z)
+
 # > ZOL
 DOMAIN,apppv.zol.com.cn
 DOMAIN,pvnapp.zol.com.cn
