@@ -336,7 +336,7 @@ DOMAIN,wxsnsdy.wxs.qq.com
 DOMAIN,wxsnsdythumb.wxs.qq.com
 
 # > TikTok (include China / Internation Version)
-URL-REGEX,^https:\/\/[a-zA-Z]{2}\.snssdk\.com\/api\/ad\/
+// URL-REGEX,^https:\/\/[a-zA-Z]{2}\.snssdk\.com\/api\/ad\/
 
 # > The Paper
 DOMAIN,admonitor.thepaper.cn
